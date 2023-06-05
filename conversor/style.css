@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #fff;
+    --black: #000;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    font-family: 'Trocchi', serif;
+    color: var(--black);
+}
+
+.linha-conteudo{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 230px;
+}
+
+main{
+    width: 55vw;
+}
+
+a{
+    text-decoration: none;
+    color: var(--verde-claro);
+}
+
+.conteudo {
+    margin-left: 20%;
+    border: solid 4px var(--black);
+    display: block;
+    background-color: var(--bege);
+    padding: 5% 10% 5% 10%;
+    text-align: center;
+}
+
+h2{
+    font-size: 100%;
+    font-weight: 300;
+}
+
+input{
+    width: 40%;
+    padding: 0.5rem;
+    border: solid 3px var(--black);
+    font-family: 'Trocchi', serif;
+}
+
+button{
+    border: solid 3px var(--black);
+    padding: 0.3rem;
+    color: var(--black);
+    background-color: var(--white);
+    font-weight: 700;
+    font-family: 'Trocchi', serif;
+}
+
+.resultado{
+    border: solid 3px var(--black);
+    padding: 0.2rem;
+    font-weight: 700;
+    text-align: center;
+    width: 40%;
+}
+
+.botao-converter{
+    padding: 0.5rem;
+    border-radius: 20px;
+    color: var(--white);
+    background-color: var(--black);
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+.botao-converter:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.linha-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5% 5% 5% 5%;
+}
+
+.conversores.nao-selecionado {
+    display: none;
+}
+
+.linha-botoes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+button:focus{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.selecionar{
+    padding: 0.5rem;
+    font-size: 70%;
+}
+
+a:hover{
+    color: var(--rosa);
+}
+
+.input-label{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 10px;
+}
+
+@media screen and (max-width: 600px) and (min-width: 320px){
+    .linha-conteudo{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .logo{
+        margin: 25% 0%;
+        width: 150px;
+    }
+
+    main {
+        width: 95vw;
+    }
+
+    .conteudo{
+        height: 100%;
+        margin-left: 0%;
+    }
+
+    .linha-botoes{
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .selecionar{
+        font-size: 90%;
+        margin-bottom: 5%;
+    }
+
+    .botao-converter{
+        margin: 10%;
+    }
+
+    .linha-botoes{
+        margin: 10%;
+    }
+}

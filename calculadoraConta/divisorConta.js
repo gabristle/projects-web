@@ -1,0 +1,4 @@
+function cadastrarCliente(){
+    const nCliente = [];
+    
+}

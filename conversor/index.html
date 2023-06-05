@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Numeros Romanos | gabristle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="linha-conteudo">
+        <aside>
+            <img class = "logo" src="logo.png" alt="">
+        </aside>
+        <main>
+            <div class="conteudo">
+                <div class = "conversores" id = "RomParaArab">
+                    <h2>Romanos para Arabicos</h2>
+                    <div class = "linha-input">
+                        <input type="text" name = "romano" id = "romano" placeholder="digite aqui">
+                        <p class = "resultado" id = "resEmArab"></p>
+                    </div>
+                    <button class = "botao-converter" id = "converRom">Converter</button>
+                </div>
+                <div class = "conversores nao-selecionado" id = "ArabParaRom">
+                    <h2>Arabicos para Romanos</h2>
+                    <div class = "linha-input">
+                        <input type = "number" name = "arabico" id = "arabico" placeholder="digite aqui">
+                        <p class = "resultado" id = "resEmRom"></p>
+                    </div>
+                    <button class = "botao-converter" id = "converArab">Converter</button>
+                </div>
+                <div class = "linha-botoes">
+                    <button type = "reset" class = "selecionar" id = "SelecRomParaArab">Romanos para Arabicos</button>
+                    <button type = "reset" class = "selecionar" id = "SelecArabParaRom">Arábicos para Romanos</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="conversor.js"></script>
+</body>
+</html>
