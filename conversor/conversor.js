@@ -21,7 +21,20 @@ function romParaArab(nRomano){
         CD: 400,
         D: 500,
         CM: 900,
-        M: 1000
+        M: 1000,
+        i: 1,
+        iv: 4,
+        v: 5,
+        ix: 9,
+        x: 10,
+        xl: 40,
+        l: 50,
+        xc: 90,
+        c: 100,
+        cd: 400,
+        d: 500,
+        cm: 900,
+        m: 1000
     };
     
     for(let i = 0; i < nRomano.length; i++){
