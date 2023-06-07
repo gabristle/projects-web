@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --black: #000;
+    --white: #fff;
+    --red: #e00000;
+}
+
+body{
+    text-align: center;
+    font-family: 'Trocchi', serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    padding: 5%;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo{
+    width: 50%;
+    border: double 8px var(--black);
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 18px;
+    padding: 3%;
+}
+
+button{
+    background-color: var(--white);
+    border: solid 3px var(--black);
+    font-weight: 700;
+    font-family: 'Trocchi', serif;
+    padding: 2%;
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+footer{
+    margin-top: 2%;
+    font-size: 12px;
+}
+
+footer span{
+    color: var(--red);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--red);
+}

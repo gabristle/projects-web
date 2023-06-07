@@ -5,15 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divisor de conta | Gabriella Costa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="">
-        <label for="nomeProduto">Nome do Produto:</label>
-        <input type="text" id="nomeProduto" required>
-        <label for="valorProduto">Valor:</label>
-        <input type="number" min="0" max="10000" id="valorPoduto" required>
-        <button type="submit">Adicionar</button>
-    </form>
-
+    <div class = "corpo">
+        <div class = "cadastros">
+            <div class = "header">
+                <img src="img/pizza.png" alt="pizza com pedaço cortado">
+                <h1>Divisor de Conta</h1>
+            </div>
+            <div class = "cadastro">
+                <div class = "cadastro-produto">
+                    <h2>Cadastro de Produtos:</h2>
+                    <input type="text" id="nomeProduto" placeholder = "nome do produto" required>
+                    <input type="number" name="precoProduto" id="precoProduto" placeholder = "preco" required>
+                    <button id = "addProduto" onclick="cadastrarProduto()">Adicionar Produto</button>
+                    <h2>Produtos Cadastrados:</h2>
+                    <table>
+                        <thead>
+                            <th>Produto</th>
+                            <th>Preco</th>
+                        </thead>
+                        <tbody id = "tbody">
+                        </tbody>
+                    </table>
+                    <br>
+                </div>
+                <div class = "cadastro-pessoa">
+                    <h2>Cadastro de Clientes:</h2>
+                    <img src="img/cliente.png" alt="">
+                    <input type="text" id="nomePessoa" placeholder = "nome do cliente">
+                    <div class = "consumidos">
+                        <h2>Produtos Consumidos:</h2>
+                        <div id = "listarProdutos">
+                        </div>
+                        <input type="checkbox" name="taxa" id="taxa">
+                        <label for="taxa">Incluir taxa de serviço?</label>
+                    </div>
+                    <button id="addPessoa" onclick="cadastrarPessoa()">Adicionar Pessoa</button>
+                </div>
+            </div>
+        </div>
+        <div class="resultados">
+            <button id="calcular" onclick="calcular()">Calcular</button>
+            <div id = "listarResultados">
+            </div>
+            <img src="img/dinheiro.png" alt="mão segurando notas de dinheiro">
+        </div>
+    </div>
+    <script src="calculadoraConta.js"></script>
 </body>
 </html>

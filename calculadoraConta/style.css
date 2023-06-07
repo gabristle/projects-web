@@ -1,5 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root{
+    --black: #000;
+    --white: #fff;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: row;
+}
+
+body{
+    height: 100%;
+    font-family: 'Trocchi', serif;
+}
+
+.corpo{
+    display: flex;
+    flex-direction: row;
+}
+
+.resultados{
+    float: left;
+    height: 100vh;
+    width: 30%;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.cadastros{
+    height: 100%;
+    width: 70%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+.header img {
+    height: 20vh;
+}
+
+.header h1{
+    padding-left: 15%;
+    align-self: center;
+    font-size: 300%;
+}
+
+h2{
+    font-size: 18px;
+    margin: 8% 5%;
+}
+
+.resultados img{
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cadastro-produto{
+    height: 100%;
+    width: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-pessoa{
+    height: 100%;
+    width: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-pessoa img{
+    align-self: center;
+    width: 30%;
+    margin-bottom: 5%;
+}
+
+.cadastro-produto input{
+    margin-bottom: 5%;
+}
+
+input{
+    font-size: 90%;
+    padding: 2%;
+    border: solid 3px var(--black);
+    font-family: 'Trocchi', serif;
+}
+
+.cadastros button{
+    border-radius: 3px;
+    border: solid 3px var(--black);
+    font-weight: 700;
+    font-family: 'Trocchi', serif;
+    padding: 2%;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+th{
+    padding: 5px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+td{
+    text-align: center;
+    padding: 3px;
+}
+
+#listarProdutos{
+    margin-bottom: 2%;
+}
+
+.resultados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultados button{
+    color: var(--black);
+    margin: 5%;
+    width: 60%;
+    padding: 2%;
+    font-weight: 700;;
+    border: solid 3px var(--black);
+    border-radius: 3px;
+    background-color: var(--white);
 }
