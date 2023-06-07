@@ -1,2 +1,2 @@
-# projects-web
-Projetos HTML, CSS e Javascript
+# Projetos de Desenvolvimento Web
+Projetos usando HTML, CSS e Javascript puro.
